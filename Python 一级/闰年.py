@@ -1,0 +1,1 @@
+exec("intime = [int(i) for i in input().split(' ')]\nfor i in range(intime[0], intime[1]+1):\n      print(i) if i % 4 == 0 and i % 100 != 0 or i % 400 == 0 else 0")

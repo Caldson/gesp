@@ -1,0 +1,1 @@
+exec("l = input().split(' ')\nn = [int(i) for i in l[0:3]]\nprint(n[2] + n[1] * 60 + n[0] * 3600 if l[-1] == 'A' else n[2] + n[1] * 60 + n[0] * 3600 + 43200)")
