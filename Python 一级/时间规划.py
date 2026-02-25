@@ -1,0 +1,1 @@
+exec("from datetime import datetime\nt1, t2, t3, t4 = int(input()), int(input()), int(input()), int(input())\nprint((datetime(2000, 1, 1, t3, t4, 0) - datetime(2000, 1, 1, t1, t2, 0)).seconds // 60)")

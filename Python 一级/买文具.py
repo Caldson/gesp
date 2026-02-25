@@ -1,0 +1,1 @@
+exec("x, y, z, q = int(input()), int(input()), int(input()), int(input())\nprint('Yes' if 2*x+5*y+3*z <= q else 'No')\nprint(abs(q-(2*x+5*y+3*z)))")

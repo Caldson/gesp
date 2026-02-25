@@ -1,0 +1,1 @@
+exec("r = 0\nfor i in range(1, int(input())+1):\n    r += sum(list(range(1, i+1)))\nprint(r)")

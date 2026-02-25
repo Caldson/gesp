@@ -1,0 +1,1 @@
+exec("a = [int(i) for i in input().split(' ')]\nyear, month = a[0], a[1]\nprint((29 if (year % 4 == 0 and year % 100 != 0) or year % 400 == 0 else 28) if month == 2 else (31 if month == 1 or month == 3 or month == 5 or month == 7 or month == 8 or month == 10 or month == 12 else 30))")
