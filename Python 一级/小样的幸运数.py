@@ -1,0 +1,1 @@
+exec("k, l, r = int(input()), int(input()), int(input())\nc = 0\nfor i in range(l, r+1):\n    if i%k==0 or str(i)[-1] == str(k):\n        c += i\nprint(c)")

@@ -1,0 +1,1 @@
+exec("m = int(input())\nprint(m // 13)\nprint(m % 13)")

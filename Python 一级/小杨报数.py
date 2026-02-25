@@ -1,0 +1,1 @@
+exec("n = int(input())\nm = int(input())\nfor i in range(1, n+1):\n    if i % m:\n        print(i)")

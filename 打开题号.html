@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>打开题号</title>
+    <style>
+        body {
+            display: inline-flexbox;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #ffffff 0%, #9aff81 100%);
+        }
+        button {
+            width: 200px;
+            height: 50px;
+            font-size: 20px;
+            border-radius: 360px;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            margin: 2px;
+        }
+        button:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.45);
+        }
+        input {
+            width: 200px;
+            height: 50px;
+            font-size: 20px;
+            border-radius: 360px;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            margin: 2px;
+        }
+        input:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.45);
+        }
+    </style>
+</head>
+<body>
+    <h1>打开题号</h1>
+    <input type="text" id="problemNumber" placeholder="XXXXX">
+    <button onclick="openProblem()">打开</button>
+    <script>
+        function openProblem() {
+            const problemNumber = document.getElementById("problemNumber").value;
+            if (problemNumber) {
+                window.open(`https://www.luogu.com.cn/problem/${problemNumber}`);
+            } else {
+                alert("请输入题号");
+            }
+        }
+    </script>
+</body>
+</html>
